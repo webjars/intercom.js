@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>intercom.js</artifactId>
-    <version>0.1.4</version>
+    <version>0.1.5-SNAPSHOT</version>
     <name>intercom.js</name>
     <description>WebJar for intercom.js</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/intercom.js</url>
         <connection>scm:git:https://github.com/webjars/intercom.js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/intercom.js.git</developerConnection>
-        <tag>intercom.js-0.1.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
