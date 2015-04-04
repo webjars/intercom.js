@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>intercom.js</artifactId>
-    <version>0.1.4-SNAPSHOT</version>
+    <version>0.1.4</version>
     <name>intercom.js</name>
     <description>WebJar for intercom.js</description>
     <url>http://webjars.org</url>
@@ -33,8 +33,8 @@
     <developers>
         <developer>
             <id>gpicron</id>
-            <name></name>
-            <email></email>
+            <name />
+            <email />
         </developer>
     </developers>
 
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/intercom.js</url>
         <connection>scm:git:https://github.com/webjars/intercom.js.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/intercom.js.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>intercom.js-0.1.4</tag>
     </scm>
 
     <build>
@@ -65,13 +65,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
